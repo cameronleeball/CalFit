@@ -1,0 +1,29 @@
+{
+  "name": "calfit",
+  "version": "1.0.0",
+  "description": "Meal planning and diet app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronleeball/CalFit.git"
+  },
+  "keywords": [
+    "diet"
+  ],
+  "author": "Team Chicago",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronleeball/CalFit/issues"
+  },
+  "homepage": "https://github.com/cameronleeball/CalFit#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "handlebars": "^4.0.10",
+    "mysql": "^2.13.0",
+    "passport": "^0.3.2",
+    "sequelize": "^4.0.0"
+  }
+}
