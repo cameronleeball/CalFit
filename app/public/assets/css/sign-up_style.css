@@ -1,0 +1,138 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+    font-family: "Open Sans", Helvetica,Arial,sans-serif;
+    background: url('../images/MG_0959-1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+ul a {
+	font-family: Abril Fatface;
+  text-shadow: 1px 1px #000;
+
+}
+
+input{
+	font-family: Old Standard TT;
+	font-size: 50px;
+	color: white;
+	border-bottom: 1px solid #ffffff;
+}
+
+.omicron .btn {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: inline-block;
+  margin: 10px;
+  font-size: inherit;
+  line-height: 1.42;
+  font-weight: normal;
+  border-width: 2px;
+  border-style: solid;
+  background: transparent;
+  border-radius: 1.66em;
+  cursor: pointer;
+  font-family: "Booster Next FY", "Avenir Next", Avenir, sans-serif;
+  user-select: none;
+  vertical-align: bottom;
+  transition: box-shadow 0.15s, background-color 0.15s;
+  box-shadow: 0 0 1em 0 rgba(255, 255, 255, 0.1) inset, 0 2.2em 0 -1em rgba(255, 255, 255, 0.2) inset, 0 1.5em 1em -1em rgba(255, 255, 255, 0.3) inset, 0 0 4px 1px rgba(0, 0, 0, 0.2) inset; }
+
+.omicron .btn-primary {
+  background-image: radial-gradient(ellipse at bottom center, #4ffa00, #52C11F);
+  background-color: #52C11F;
+  color: rgba(35, 83, 13, 0.8);
+  border-color: #3f9518; }
+  .omicron .btn-primary:hover {
+    background-image: radial-gradient(ellipse at bottom center, #65ff1e, #52C11F); }
+  .omicron .btn-primary:active {
+    background-image: radial-gradient(ellipse at bottom center, #3ec700, #52C11F); }
+
+  	.omicron .btn.btn-disabled {
+    opacity: 0.8; }
+    .omicron .btn.btn-disabled:active {
+      opacity: 0.6; }
+ 	.omicron .btn:active {
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1) inset, 0 2.2em 1em -1em rgba(255, 255, 255, 0.05) inset, 0 1.5em 1em -1em rgba(255, 255, 255, 0) inset, 0 0 4px 1px rgba(0, 0, 0, 0.2) inset; }
+
+.userPass{
+
+		margin-left: 50px;
+	    color: white;
+	        
+}
+
+.button-collapse{
+	font-family: Abril Fatface;
+	color: white;
+	
+}
+
+.material-icons{
+	font-family: Abril Fatface;
+	color: white;
+
+}
+
+.input{
+	margin-left: 50px;
+}
+
+.light-blue.lighten-1 {
+    background-color: #63B931 !important;
+}
+
+.brand-logo {
+	font-family: Abril Fatface;
+}
+
+.header-logo{
+	font-family: Abril Fatface;
+	padding-left: 200px;
+	color: white;
+	text-shadow: 2px 2px #000;
+
+}
+
+.header-text{
+	font-family: Abril Fatface;
+	font-size: 20px;
+	padding-left: 200px;
+	color: white;
+	text-shadow: 1px 1px #000;
+}
+
+.header2-text{
+	font-family: Abril Fatface;
+	font-size: 20px;
+	padding-left: 5px;
+	color: white;
+	text-shadow: 1px 1px #000;
+}
+
+.login{
+	background-color: #63B931;
+    color: white;
+	border-radius: 50%;
+	font-size: 20px;
+	font-family: Abril Fatface;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}

@@ -3,6 +3,9 @@ var passport = require('passport');
 var Strategy = require('passport-local').Strategy;
 var db = require('./models/index.js');
 
+var PORT = process.env.PORT || 8080;
+
+
 
 // Configure the local strategy for use by Passport.
 //
@@ -40,8 +43,6 @@ passport.deserializeUser(function(id, cb) {
 });
 
 
-
-
 // Create a new Express application.
 var app = express();
 
@@ -64,8 +65,14 @@ app.use(express.static("./public"));
 
 // Define routes.
 
-require("./routes/api.js")(app);
-require("./routes/html.js")(app);
+// require("./routes/api.js")(app);
+// require("./routes/html.js")(app);
+
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
+});
 
 app.get('/',
   function(req, res) {
