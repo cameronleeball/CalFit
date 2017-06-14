@@ -1,0 +1,24 @@
+
+********************************************************************************
+To keep your branch in sync with the master, complete the following steps:
+
+(This will replace your branch with what's currently in master)
+********************************************************************************
+
+git checkout master
+git pull
+git checkout <yourBranchHere>
+git merge master 
+
+
+********************************************************************************
+To merge your branch into the master, complete the following steps:
+
+
+(This will replace what's in the master with latest changes from your branch)
+********************************************************************************
+
+git checkout master
+git merge <yourBranchHere>
+git push origin master
+
