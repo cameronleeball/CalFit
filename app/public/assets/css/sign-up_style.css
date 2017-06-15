@@ -15,6 +15,53 @@ body {
 
 }
 
+label {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+color: #ffffff;
+font-family: Abril Fatface;
+text-shadow: 1px 1px #000;
+}
+
+#download-button {
+    background-color: #63B931;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: Abril Fatface;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+input[type=checkbox].css-checkbox {
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height:1px; 
+    width:1px; 
+    margin:-1px; 
+    padding:0;
+    border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  display:inline-block;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:25px;
+  cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+
 .icon-block {
   padding: 0 15px;
 }
