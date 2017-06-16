@@ -1,0 +1,130 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+body {
+    font-family: "Open Sans", Helvetica,Arial,sans-serif;
+  }
+
+nav ul a,
+nav .brand-logo {
+  color: white;
+  font-family: Abril Fatface;
+  text-shadow: 1px 1px #000;
+}
+
+.white{
+  background-color: #63B931 !important;
+}
+.header{
+  font-family: Abril Fatface;
+  color: white;
+  text-shadow: 1.5px 1.5px #000;
+}
+
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  .page-footer{
+    font-family: Old Standard TT;
+    color:white;
+    background-color: #63B931 !important;
+  }
+
+  input.input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #ffffff;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: 1px 1px #000;
+    box-sizing: content-box;
+    transition: all 0.3s;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.teal.lighten-1 {
+    background-color: #63B931 !important;
+}
+
+#download-button{
+  background-color: #63B931;
+    color: white;
+  border-radius: 50%;
+  font-size: 16px;
+  font-family: Abril Fatface;
+  border: 3px solid #fff;
+  color: #fff;
+  overflow: hidden;
+}
+
+h2{
+  font-family: Abril Fatface;
+  font-size: 30px;
+  text-shadow: 1px 1px #000;
+}
+
+.material-icons{
+  color:#63B931;
+}
+
+.footer-copyright{
+  font-family: Old Standard TT;
+}
+
+.devConnect{
+  font-family: Abril Fatface;
+  color: white;
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
