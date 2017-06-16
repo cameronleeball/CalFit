@@ -5,11 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
-
-
 body {
     font-family: "Open Sans", Helvetica,Arial,sans-serif;
-    background: url('../images/healthy2.jpg') no-repeat center center fixed;
+    background: url('../images/meal-prrp1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -17,51 +15,6 @@ body {
 
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-label {
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-color: #ffffff;
-font-family: Abril Fatface;
-text-shadow: 1px 1px #000;
-}
-
-input[type=checkbox].css-checkbox {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height:1px; 
-    width:1px; 
-    margin:-1px; 
-    padding:0;
-    border:0;
-}
-
-input[type=checkbox].css-checkbox + label.css-label {
-  display:inline-block;
-  background-repeat:no-repeat;
-  background-position: 0 0;
-  font-size:25px;
-  
-}
-
-input[type=checkbox].css-checkbox:checked + label.css-label {
-  background-position: 0 -15px;
-}
-
-
-.profileImg{
-  padding-left: 500px;
-  height: 60%;
-  width: 60%;
-}
 .icon-block {
   padding: 0 15px;
 }
@@ -71,7 +24,7 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 
 ul a {
 	font-family: Abril Fatface;
-  text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px #000;
 
 }
 
@@ -82,6 +35,23 @@ input{
 	border-bottom: 1px solid #ffffff;
 }
 
+#download-button {
+    background-color: #63B931;
+    color: white;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: Abril Fatface;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.userPass{
+
+		margin-left: 50px;
+	    color: white;
+	        
+}
 
 .button-collapse{
 	font-family: Abril Fatface;
@@ -109,7 +79,7 @@ input{
 
 .header-logo{
 	font-family: Abril Fatface;
-	padding-left: 385px;
+	padding-left: 200px;
 	color: white;
 	text-shadow: 2px 2px #000;
 
@@ -123,10 +93,13 @@ input{
 	text-shadow: 1px 1px #000;
 }
 
-.header2-text{
-	font-family: Abril Fatface;
+.login{
+	background-color: #63B931;
+    color: white;
+	border-radius: 50%;
 	font-size: 20px;
-	padding-left: 5px;
-	color: white;
-	text-shadow: 1px 1px #000;
+	font-family: Abril Fatface;
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
 }
