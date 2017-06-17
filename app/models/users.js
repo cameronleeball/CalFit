@@ -19,7 +19,7 @@ module.exports = function (sequelize, DataTypes) {
         height: {
             type: DataTypes.STRING,
             allowNull: true,
-            defaultValue: "5\'11\""
+            defaultValue: "5 11"
         },
         curWeight: {
             type: DataTypes.INTEGER,

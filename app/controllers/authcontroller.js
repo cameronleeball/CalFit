@@ -6,7 +6,7 @@ var db = require('../models/index.js');
 
 router.get('/',
   function (req, res) {
-    res.render('index' /*, { user: req.db.user }*/);
+    res.render('index', {layout: 'main'}/*, { user: req.db.user }*/);
   });
 
 router.get('/sign-up',
@@ -37,7 +37,7 @@ router.post('/login',
   passport.authenticate('local-login',
     { failureRedirect: '/login' }),
   function (req, res) {
-    console.log("butts");
+    // console.log("butts");
     res.redirect('/');
   });
 
@@ -48,9 +48,9 @@ router.get('/logout',
   });
 
 router.get('/profile',
-  // require('connect-ensure-login').ensureLoggedIn(),
+  require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    res.render('profile' /*, { user: req.body.User }*/);
+    res.render('profile' , { layout: 'profile' });/*, { user: req.body.User }*/
   });
 
 router.post('/sign-up',
