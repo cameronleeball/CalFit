@@ -57,7 +57,8 @@ router.post('/sign-up',
   passport.authenticate('local-sign-up', {
     successRedirect: '/profile',
     failureRedirect: '/sign-up'
-  }));
+  })),
+  console.log(db.Users);
 
 // router.put("/:id", function (req, res) {
 //   var condition = "id = " + req.params.id;

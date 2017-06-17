@@ -30,8 +30,15 @@ module.exports = function (passport, user) {
                             email: req.body.email,
                             username: username,
                             password: userPassword,
-                            name: req.body.name
-                            // lastname: req.body.lastname
+                            name: req.body.name,
+                            // vegan: req.body.vegan,
+                            // vegi: req.body.vegitarian
+                            dairyFree: req.body.dairy
+                            // lowSugar: "",
+                            // lowFat: "",
+                            // fatFree: "",
+                            // glutenFree: "",
+
                         };
                     User.create(data).then(function (newUser, created) {
                         if (!newUser) {
