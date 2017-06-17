@@ -6,7 +6,8 @@ var db = require('../models/index.js');
 
 router.get('/',
   function (req, res) {
-    res.render('index' /*, { user: req.db.user }*/);
+    res.render('index',
+      { layout: 'main' });
   });
 
 router.get('/sign-up',
@@ -21,12 +22,6 @@ router.get('/login',
       { layout: 'login' });
   });
 
-router.get('/sign-up',
-  function (req, res) {
-    res.render('sign-up', 
-    { layout: 'sign-up' });
-  });
-
 router.get('/saved-meals',
   function (req, res) {
     res.render('saved-meals',
@@ -34,12 +29,13 @@ router.get('/saved-meals',
   });
 
 router.post('/login',
-  passport.authenticate('local-login',
-    { failureRedirect: '/login' }),
+  passport.authenticate('local-login', {
+    successRedirect: '/profile',
+    failureRedirect: '/sign-up'
+  })),
   function (req, res) {
-    console.log("butts");
-    res.redirect('/');
-  });
+   
+  };
 
 router.get('/logout',
   function (req, res) {
@@ -48,9 +44,13 @@ router.get('/logout',
   });
 
 router.get('/profile',
-  // require('connect-ensure-login').ensureLoggedIn(),
+  require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    res.render('profile' , { user: req.body.User });
+    var user = {
+      data: req.body.User
+    };
+    res.render('profile', { layout: 'profile' }, { user });
+    console.log(user);
   });
 
 router.post('/sign-up',
@@ -61,17 +61,12 @@ router.post('/sign-up',
   console.log(db.Users);
 
 // router.put("/:id", function (req, res) {
-//   var condition = "id = " + req.params.id;
 
-//   console.log("condition", condition);
-
-//   User.update({
-//     devoured: req.body.devoured
-//   }, condition, function () {
-//     res.redirect("/");
-//   });
+//   // User.update({
+//   //   data: req.body.devoured
+//   // }, function () {
+//   //   res.redirect("/");
+//   // });
 // });
-
-
 
 module.exports = router;
