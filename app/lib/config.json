@@ -4,13 +4,23 @@
     "password": "valmont",
     "database": "calfit_test",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "strict": "true"
   },
-  "production": {
+  "stage": {
     "username": "root",
     "password": "valmont",
     "database": "calfit",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "strict": "true"
+  } ,
+  "production": {
+    "username": "bf817eccb145ae",
+    "password": "8be6261d",
+    "database": "heroku_dc1d96f8a1601a4",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
+    "dialect": "mysql",
+    "strict": "false"
   }
 }
