@@ -51,7 +51,11 @@ module.exports = function (passport, user) {
             });
         }
     ));
+};
 
+module.exports = function (passport, user) {
+    var User = user;
+    var LocalStrategy = require('passport-local').Strategy;
 
     passport.use('local-login', new LocalStrategy(
         {
@@ -89,8 +93,13 @@ module.exports = function (passport, user) {
             });
         }
     ));
+};
 
-     passport.use('local-update', new LocalStrategy(
+module.exports = function (passport, user) {
+    var User = user;
+    var LocalStrategy = require('passport-local').Strategy;
+
+    passport.use('local-update', new LocalStrategy(
         {
             usernameField: 'username',
             passwordField: 'password',
@@ -130,17 +139,18 @@ module.exports = function (passport, user) {
             });
         }
     ));
-
-    passport.serializeUser(function (user, done) {
-        done(null, user.id);
-    });
-    passport.deserializeUser(function (id, done) {
-        User.findById(id).then(function (user) {
-            if (user) {
-                done(null, user.get());
-            } else {
-                done(user.errors, null);
-            }
-        });
-    });
 };
+    };
+};
+passport.serializeUser(function (user, done) {
+    done(null, user.id);
+});
+passport.deserializeUser(function (id, done) {
+    User.findById(id).then(function (user) {
+        if (user) {
+            done(null, user.get());
+        } else {
+            done(user.errors, null);
+        }
+    });
+});
