@@ -126,11 +126,13 @@ h2{
   font-family: Old Standard TT;
 }
 
-.devConnect{
+.devTeam{
+  padding-left: 200px;
   font-family: Abril Fatface;
   color: white;
-
+  text-shadow: 1px 1px #000;
 }
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
