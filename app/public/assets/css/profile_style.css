@@ -70,18 +70,9 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 }
 
 ul a {
-	font-family: Nothing You Could Do;
+	font-family: Abril Fatface;
   text-shadow: 1px 1px #000;
 
-}
-
-nav ul a {
-    transition: background-color .3s;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    padding: 0 15px;
-    cursor: pointer;
 }
 
 input{
@@ -116,24 +107,9 @@ input{
 	font-family: Abril Fatface;
 }
 
-#download-button {
-    background-color: #63B931;
-    color: white;
-    border-radius: 50%;
-    font-size: 16px;
-    font-family: Abril Fatface;
-    border: 3px solid #fff;
-    color: #fff;
-    overflow: hidden;
-}
-
-.teal.lighten-1 {
-    background-color: #63B931 !important;
-}
-
 .header-logo{
 	font-family: Abril Fatface;
-	padding-left: 285px;
+	padding-left: 385px;
 	color: white;
 	text-shadow: 2px 2px #000;
 
@@ -142,7 +118,7 @@ input{
 .header-text{
 	font-family: Abril Fatface;
 	font-size: 20px;
-	padding-left: 100px;
+	padding-left: 200px;
 	color: white;
 	text-shadow: 1px 1px #000;
 }

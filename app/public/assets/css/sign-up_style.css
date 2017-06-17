@@ -38,23 +38,6 @@ text-shadow: 1px 1px #000;
     overflow: hidden;
 }
 
-nav ul a,
-
-nav .brand-logo {
-  color: white;
-  font-family: Nothing You Could Do;
-  text-shadow: 1px 1px #000;
-}
-
-nav ul a {
-    transition: background-color .3s;
-    font-size: 25px;
-    color: #fff;
-    display: block;
-    padding: 0 15px;
-    cursor: pointer;
-}
-
 
 input[type=checkbox].css-checkbox {
     position: absolute; 
