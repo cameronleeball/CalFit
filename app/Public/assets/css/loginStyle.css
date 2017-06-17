@@ -7,7 +7,7 @@
  */
 body {
     font-family: "Open Sans", Helvetica,Arial,sans-serif;
-    background: url('/assets/images/meal-prrp1.jpg') no-repeat center center fixed;
+    background: url('../images/meal-prrp1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -23,9 +23,19 @@ body {
 }
 
 ul a {
-	font-family: Abril Fatface;
+	font-family: Nothing You Could Do;
+	font-size: 25px;
 	text-shadow: 1px 1px #000;
 
+}
+
+nav ul a {
+    transition: background-color .3s;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    padding: 0 15px;
+    cursor: pointer;
 }
 
 input{

@@ -38,7 +38,7 @@ router.get('/logout',
 router.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    // res.render('profile', { user: req.db.user });
+    res.render('profile', { user: req.db.user });
   });
 
 router.post('/sign-up', 
