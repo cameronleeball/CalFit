@@ -9,16 +9,16 @@ router.get('/',
     res.render('index', {layout: 'main'}/*, { user: req.db.user }*/);
   });
 
-router.get('/sign-up',
-  function (req, res) {
-    res.render('sign-up',
-      { layout: 'sign-up' });
-  });
-
 router.get('/login',
   function (req, res) {
     res.render('login',
       { layout: 'login' });
+  });
+
+router.get('/sign-up',
+  function (req, res) {
+    res.render('sign-up', 
+    { layout: 'sign-up' });
   });
 
 router.get('/saved-meals',
@@ -28,14 +28,12 @@ router.get('/saved-meals',
   });
 
 router.post('/login',
-  passport.authenticate('local-login', {
-    successRedirect: '/profile',
-    failureRedirect: '/sign-up'
-  })),
+  passport.authenticate('local-login',
+    { failureRedirect: '/login' }),
   function (req, res) {
     // console.log("butts");
     res.redirect('/');
-  };
+  });
 
 router.get('/logout',
   function (req, res) {
@@ -46,23 +44,13 @@ router.get('/logout',
 router.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    res.render('profile', { layout: 'profile' });
+    res.render('profile' , { layout: 'profile' });/*, { user: req.body.User }*/
   });
 
 router.post('/sign-up',
   passport.authenticate('local-sign-up', {
     successRedirect: '/profile',
     failureRedirect: '/sign-up'
-  })),
-
-
-router.put("/profile", function (req, res) {
-
-  User.update({
-    data: req.body.devoured
-  }, function () {
-    res.redirect("/");
-  });
-});
+  }));
 
 module.exports = router;
