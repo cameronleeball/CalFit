@@ -50,7 +50,7 @@ router.get('/logout',
 router.get('/profile',
   // require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    res.render('profile' /*, { user: req.body.User }*/);
+    res.render('profile' , { user: req.body.User });
   });
 
 router.post('/sign-up',

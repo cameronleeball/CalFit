@@ -43,7 +43,7 @@ module.exports = function (sequelize, DataTypes) {
         },
         dairyFree: {
             type: DataTypes.BOOLEAN,
-            defaultValue: 0
+            defaultValue: false
         },
         lowSugar: {
             type: DataTypes.BOOLEAN,

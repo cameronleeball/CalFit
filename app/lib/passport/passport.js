@@ -33,7 +33,7 @@ module.exports = function (passport, user) {
                             name: req.body.name,
                             // vegan: req.body.vegan,
                             // vegi: req.body.vegitarian
-                            dairyFree: req.body.dairy
+                            glutenFree: req.body.gluten
                             // lowSugar: "",
                             // lowFat: "",
                             // fatFree: "",

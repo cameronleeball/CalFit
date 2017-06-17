@@ -9,7 +9,7 @@
 
 body {
     font-family: "Open Sans", Helvetica,Arial,sans-serif;
-    background: url('../images/healthy2.jpg') no-repeat center center fixed;
+    background: url('/assets/images/healthy2.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
