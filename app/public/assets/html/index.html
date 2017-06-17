@@ -3,31 +3,32 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Unique Cuisine</title>
+  <title>Cal/Fit</title>
 
   <!-- CSS  -->
-  <link href='https://fonts.googleapis.com/css?family=Rubik Mono One|Josefin Slab|Passion One|Permanent Marker|Bowlby One|Abril Fatface|EB Garamond|Old Standard TT|Nothing You Could Do' rel="stylesheet" type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rubik Mono One|Josefin Slab|Passion One|Permanent Marker|Bowlby One|Abril Fatface|EB Garamond|Old Standard TT' rel="stylesheet" type='text/css'>
   <link href="../css/materialize1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="../css/indexstyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo">Cal/Fit</a>
 
       <ul class="right hide-on-med-and-down">
-        <li><a href="login.html">Log-in</a></li>
+        <li><a href="login.html">Log in</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="login.html">Log-in</a></li>
+        <li><a href="login.html">Log in</a></li>
       </ul>
 
       <ul class="right hide-on-med-and-down">
-        <li><a href="sign-up.html">Sign-Up</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="sign-up.html">Sign-Up</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
       </ul>
 
       <ul class="right hide-on-med-and-down">
@@ -46,91 +47,18 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center">Unique Cuisine</h1>
-        <div class="row center">
-          
-          <h5 class="header col s12 light">Once you've set up your profile every recipe will be tailored to you</h5>
-          <h5 class="header col s12 light">Search for a quick meal or plan your meals and save them to your profile</h5>
-</div>
- </div>
-    </div>
-    <div class="parallax"><img src="../images/macro-food-modif1-cielo_v02.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-
-    <div class="row center">
-          <h5 class="meal-select header col s12 light">Find a quick meal designed just for you</h5>
-    </div>
-
-      
-    </div>
-  </nav>
-
-
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center">Quick Meal Finder</h1>
-        <div class="row center">
-        
-           <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
-
-        </div>
-        <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-        </div>
-        
-        <br><br>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="../images/nicolesy-food-1.jpg" alt="Unsplashed background img 1"></div>
-  </div>
-
-
-  <div class="container">
-    <div class="section">
-
-      <!--   Icon Section   -->
-      
-        <div class="col s12 m4">
-          <div class="icon-block">
-          <div class="HANDLEBAR-AREA">
-            <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-            <p class="center light">...</p>
-          </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
- 
- <h5 class="meal-select center header col s12 light">Set a meal plan and save your favorite meals to your profile</h5>
-      
-    </div>
-  </nav>
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
         <h1 class="header center">Breakfast</h1>
         <div class="row center">
-          <h5 class="header col s12 light">Find a Breakfast recipe and we'll save it in your profile</h5>
+          <h5 class="header col s12 light">Input your Breakfast and we'll keep track of your caloric intake</h5>
 
            <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
 
+           <input class="input" type="text" placeholder="Enter ingredients" name="bfast2" required>
+
+           <input class="input" type="text" placeholder="Enter Serving Size" name="bfast3" required>
         </div>
         <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Analyze</a>
         </div>
         <br><br>
 
@@ -144,19 +72,34 @@
     <div class="section">
 
       <!--   Icon Section   -->
-      
+      <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-          <div class="HANDLEBAR-AREA">
-            <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-            <p class="center light">...</p>
+            <h2 class="center brown-text"><i class="material-icons">Calories</i></h2>
+             <p class="light">...</p>
           </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Type</i></h2>
+
+            <p class="light">...</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Preference</i></h2>
+
+           <p class="light">...</p>
           </div>
         </div>
       </div>
-        
+
     </div>
   </div>
+
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -164,13 +107,17 @@
         <div class="row center">
             <h1 class="header center">Lunch</h1>
             <div class="row center">
-          <h5 class="header col s12 light">Find a Lunch recipe and we'll save it in your profile</h5>
+          <h5 class="header col s12 light">Input your Lunch and we'll keep track of your caloric intake</h5>
 
            <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
 
+           <input class="input" type="text" placeholder="Enter ingredients" name="lunch2" required>
+
+           <input class="input" type="text" placeholder="Enter Serving Size" name="lunch3" required>
+
+
            <div class="row center">
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Analyze</a>
         </div>
         </div>
         </div>
@@ -182,17 +129,33 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
-      
+     <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-          <div class="HANDLEBAR-AREA">
-            <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-            <p class="center light">...</p>
+            <h2 class="center brown-text"><i class="material-icons">Calories</i></h2>
+             <p class="light">...</p>
           </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Type</i></h2>
+
+            <p class="light">...</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Preference</i></h2>
+
+           <p class="light">...</p>
           </div>
         </div>
       </div>
+
+    </div>
+  </div>
 
     </div>
   </div>
@@ -203,12 +166,14 @@
       <div class="container">
         <div class="row center">
           <h1 class="header center">Dinner</h1>
-          <h5 class="header col s12 light">Find a Dinner recipe and we'll save it in your profile</h5>
+          <h5 class="header col s12 light">Input your Dinner and we'll keep track of your caloric intake</h5>
             
-           <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
+            <input class="input" type="text" placeholder="Enter Recipe" name="din1" required>
 
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+           <input class="input" type="text" placeholder="Enter ingredients" name="din2" required>
+
+           <input class="input" type="text" placeholder="Enter Serving Size" name="din3" required>
+           <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Analyze</a>
         </div>
       </div>
     </div>
@@ -218,14 +183,27 @@
   <div class="container">
     <div class="section">
 
-      <!--   Icon Section   -->
-      
+     <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-          <div class="HANDLEBAR-AREA">
-            <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-            <p class="center light">...</p>
+            <h2 class="center brown-text"><i class="material-icons">Calories</i></h2>
+             <p class="light">...</p>
           </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Type</i></h2>
+
+            <p class="light">...</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">Diet Preference</i></h2>
+
+           <p class="light">...</p>
           </div>
         </div>
       </div>
@@ -233,9 +211,77 @@
     </div>
   </div>
 
+    </div>
+  </div>
+
 
   <footer class="page-footer">
-     <div class="footer-copyright">
+    <div class="container">
+      <div class="devImages">
+        <div class="row">
+          <h5 class="devConnect">Connect with our Developers</h5>
+        </div>
+        <div class="row">
+          <div class="col l4 s4">
+            <img src="../images/Cameron.png" alt ="Cameron" width="150"/>
+            <p>
+              Cameron Ball
+              <br>
+              Backend Developer
+              <br>
+              <a href="http://github.com/cameronleeball">
+                <img src="../images/github.png" alt="github cameron" height="42" width="42">
+              </a>
+              <a href="https://www.linkedin.com/in/cameronleeball/">
+                <img src="../images/linkedin.png" height="42" width="42">
+              </a>
+              <a href="mailto:cameronleeball@gmail.com">
+                <img src="../images/email.png" height="42" width="42">
+              </a>
+            </p>
+          </div>
+          <div class="col l4 s4">
+            <img class="richard" src="../images/Richard.png" alt="Richard" width="150"/>
+            <p>
+              Richard Woodward
+              <br>
+              Backend Developer
+              <br>
+              <a href="https://github.com/rickwoody86">
+                <img src="../images/github.png" height="42px" width="42px">
+              </a>
+              <a href="https://www.linkedin.com/in/richard-woodward-747042134/">
+                <img src="../images/linkedin.png" height="42px" width="42px">
+              </a>
+              <a href="mailto:rickwoody86@gmail.com">
+                <img src="../images/email.png" height="42px" width="42px">
+              </a>
+            </p>
+          </div>
+          <div class="col l4 s4">
+            <img class="wali" src="../images/Wali.png" width="150"/>
+            <p>
+              Wali Pitt
+              <br>
+              Frontend Developer
+              <br>
+              <a href="http://github.com/walidpitt">
+                <img src="../images/github.png" height="42px" width="42px">
+              </a>
+              <a href="https://www.linkedin.com/in/wali-pitt-61666941/">
+                <img src="../images/linkedin.png" height="42px" width="42px">
+              </a>
+              <a href="mailto:walidpitt@gmail.com">
+                <img src="../images/email.png" height="42px" width="42px">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <div class="container">
         <p> Created by Team Chicago©</p>
       </div>
     </div>
