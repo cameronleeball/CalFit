@@ -6,12 +6,7 @@ var db = require('../models/index.js');
 
 router.get('/',
   function (req, res) {
-<<<<<<< HEAD
-    res.render('index',
-      { layout: 'main' });
-=======
     res.render('index', {layout: 'main'}/*, { user: req.db.user }*/);
->>>>>>> master
   });
 
 router.get('/sign-up',
@@ -40,7 +35,7 @@ router.post('/login',
   function (req, res) {
     // console.log("butts");
     res.redirect('/');
-  });
+  };
 
 router.get('/logout',
   function (req, res) {

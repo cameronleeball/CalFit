@@ -37,7 +37,8 @@ module.exports = function (passport, user) {
                             glutenFree: req.body.gluten,
                             lowSugar: req.body.lowSugar,
                             lowFat: req.body.lowFat,
-                            fatFree: req.body.fatFree
+                            fatFree: req.body.fatFree,
+                            dairyFree: req.body.dairyFree,
                         };
                     User.create(data).then(function (newUser, created) {
                         if (!newUser) {
@@ -51,11 +52,6 @@ module.exports = function (passport, user) {
             });
         }
     ));
-};
-
-module.exports = function (passport, user) {
-    var User = user;
-    var LocalStrategy = require('passport-local').Strategy;
 
     passport.use('local-login', new LocalStrategy(
         {
@@ -93,11 +89,6 @@ module.exports = function (passport, user) {
             });
         }
     ));
-};
-
-module.exports = function (passport, user) {
-    var User = user;
-    var LocalStrategy = require('passport-local').Strategy;
 
     passport.use('local-update', new LocalStrategy(
         {
@@ -118,14 +109,17 @@ module.exports = function (passport, user) {
                 } else {
                     var data =
                         {
-                            // vegan: req.body.vegan,
-                            // vegi: req.body.vegitarian
-                            glutenFree: req.body.gluten
-                            // lowSugar: "",
-                            // lowFat: "",
-                            // fatFree: "",
-                            // glutenFree: "",
-
+                            email: req.body.email,
+                            username: username,
+                            password: userPassword,
+                            name: req.body.name,
+                            vegan: req.body.vegan,
+                            vegitarian: req.body.vegitarian,
+                            glutenFree: req.body.gluten,
+                            lowSugar: req.body.lowSugar,
+                            lowFat: req.body.lowFat,
+                            fatFree: req.body.fatFree,
+                            dairyFree: req.body.dairyFree,
                         };
                     User.create(data).then(function (newUser, created) {
                         if (!newUser) {
@@ -139,18 +133,17 @@ module.exports = function (passport, user) {
             });
         }
     ));
-};
-    };
-};
-passport.serializeUser(function (user, done) {
-    done(null, user.id);
-});
-passport.deserializeUser(function (id, done) {
-    User.findById(id).then(function (user) {
-        if (user) {
-            done(null, user.get());
-        } else {
-            done(user.errors, null);
-        }
+
+    passport.serializeUser(function (user, done) {
+        done(null, user.id);
     });
-});
+    passport.deserializeUser(function (id, done) {
+        User.findById(id).then(function (user) {
+            if (user) {
+                done(null, user.get());
+            } else {
+                done(user.errors, null);
+            }
+        });
+    })
+};
