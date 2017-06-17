@@ -13,8 +13,13 @@ body {
 nav ul a,
 nav .brand-logo {
   color: white;
-  font-family: Abril Fatface;
+  font-size: 25px;
+  font-family: Nothing You Could Do;
   text-shadow: 1px 1px #000;
+}
+
+.meal-button{
+  margin-left: 100px;
 }
 
 .white{
@@ -26,6 +31,9 @@ nav .brand-logo {
   text-shadow: 1.5px 1.5px #000;
 }
 
+.meal-select{
+  padding-top: 18px;
+}
 
 p {
   line-height: 2rem;
@@ -118,11 +126,13 @@ h2{
   font-family: Old Standard TT;
 }
 
-.devConnect{
+.devTeam{
+  padding-left: 200px;
   font-family: Abril Fatface;
   color: white;
-
+  text-shadow: 1px 1px #000;
 }
+
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
