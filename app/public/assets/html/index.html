@@ -49,7 +49,7 @@
         <h1 class="header center">Unique Cuisine</h1>
         <div class="row center">
           
-          <h5 class="header col s12 light">Once you've set up your profile, every recipe will be tailored to you</h5>
+          <h5 class="header col s12 light">Once you've set up your profile every recipe will be tailored to you</h5>
           <h5 class="header col s12 light">Search for a quick meal or plan your meals and save them to your profile</h5>
 </div>
  </div>
@@ -76,10 +76,12 @@
         <h1 class="header center">Quick Meal Finder</h1>
         <div class="row center">
         
-           <form class="search-form">
-          <input type="text" class="search-text form-control input-lg" placeholder="Search Recipes" autofocus/>
-          <button class="btn-large waves-effect waves-light teal lighten-1" id="download-button" type="submit">Find Recipe</button>
-        </form>
+           <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
+
+        </div>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
+        </div>
         
         <br><br>
 
@@ -104,22 +106,11 @@
         </div>
       </div>
 
-    
-
     </div>
   </div>
-  <section class="recipe-results">
-      <div class="row">
-        <div class="col-md-12"><h2 id="recipes-title"></h2></div>
-      </div>
-      <div class="row results" id="recipes">
-        <!-- recipe results go here -->
-      </div>
-    </section>
 
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-
  
  <h5 class="meal-select center header col s12 light">Set a meal plan and save your favorite meals to your profile</h5>
       
@@ -134,7 +125,7 @@
         <div class="row center">
           <h5 class="header col s12 light">Find a Breakfast recipe and we'll save it in your profile</h5>
 
-           <input class="input" type="text" placeholder="Search Recipes" name="bfast1" required>
+           <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
 
         </div>
         <div class="row center">
@@ -175,7 +166,7 @@
             <div class="row center">
           <h5 class="header col s12 light">Find a Lunch recipe and we'll save it in your profile</h5>
 
-           <input class="input" type="text" placeholder="Search Recipes" name="lunch1" required>
+           <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
 
            <div class="row center">
           <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
@@ -214,7 +205,7 @@
           <h1 class="header center">Dinner</h1>
           <h5 class="header col s12 light">Find a Dinner recipe and we'll save it in your profile</h5>
             
-           <input class="input" type="text" placeholder="Search Recipes" name="lunch1" required>
+           <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
 
           <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
           <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
@@ -245,7 +236,7 @@
 
   <footer class="page-footer">
      <div class="footer-copyright">
-        <p class="devTeam"> Unique Cuisine created by Team Chicago developers Cameron Ball, Harold Coleman, Wali Pitt, Richard Woodard</p>
+        <p> Created by Team Chicago©</p>
       </div>
     </div>
   </footer>
@@ -254,7 +245,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="../js/materialize1.js"></script>
   <script src="../js/init1.js"></script>
-  <script src="app.js"></script>
 
   </body>
 </html>
