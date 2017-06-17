@@ -37,6 +37,7 @@ nav .brand-logo {
 
 p {
   line-height: 2rem;
+  color: #63B931;
 }
 
 .button-collapse {
@@ -116,7 +117,18 @@ h2{
   font-family: Abril Fatface;
   font-size: 30px;
   text-shadow: 1px 1px #000;
+  color: #63B931;
 }
+
+h5 {
+    font-size: 25px;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 0;
+    font-family: Pacifico;
+    color: #63B931;
+    text-shadow: 1px 1px #600473;
+}
+
 
 .material-icons{
   color:#63B931;

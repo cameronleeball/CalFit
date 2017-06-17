@@ -56,13 +56,13 @@ router.post('/sign-up',
   })),
 
 
-// router.put("/:id", function (req, res) {
+router.put("/profile", function (req, res) {
 
-//   // User.update({
-//   //   data: req.body.devoured
-//   // }, function () {
-//   //   res.redirect("/");
-//   // });
-// });
+  User.update({
+    data: req.body.devoured
+  }, function () {
+    res.redirect("/");
+  });
+});
 
 module.exports = router;
