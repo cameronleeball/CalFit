@@ -11,19 +11,31 @@ router.get('/',
 
 router.get('/sign-up',
   function (req, res) {
-    res.render('sign-up', 
-    { layout: 'sign-up' });
+    res.render('sign-up',
+      { layout: 'sign-up' });
   });
 
 router.get('/login',
   function (req, res) {
-    res.render('login', 
-    { layout: 'login' });
+    res.render('login',
+      { layout: 'login' });
+  });
+
+router.get('/sign-up',
+  function (req, res) {
+    res.render('sign-up', 
+    { layout: 'sign-up' });
+  });
+
+router.get('/saved-meals',
+  function (req, res) {
+    res.render('saved-meals',
+      { layout: 'saved-meals' });
   });
 
 router.post('/login',
-  passport.authenticate('local-login', 
-  { failureRedirect: '/login' }),
+  passport.authenticate('local-login',
+    { failureRedirect: '/login' }),
   function (req, res) {
     console.log("butts");
     res.redirect('/');
@@ -36,28 +48,28 @@ router.get('/logout',
   });
 
 router.get('/profile',
-  require('connect-ensure-login').ensureLoggedIn(),
+  // require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
     res.render('profile' /*, { user: req.body.User }*/);
   });
 
-router.post('/sign-up', 
-  passport.authenticate('local-sign-up', {  
+router.post('/sign-up',
+  passport.authenticate('local-sign-up', {
     successRedirect: '/profile',
     failureRedirect: '/sign-up'
   }));
 
-router.put("/:id", function (req, res) {
-  var condition = "id = " + req.params.id;
+// router.put("/:id", function (req, res) {
+//   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
+//   console.log("condition", condition);
 
-  User.update({
-    devoured: req.body.devoured
-  }, condition, function () {
-    res.redirect("/");
-  });
-});
+//   User.update({
+//     devoured: req.body.devoured
+//   }, condition, function () {
+//     res.redirect("/");
+//   });
+// });
 
 
 

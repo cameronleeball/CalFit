@@ -45,6 +45,8 @@ module.exports = function (passport, user) {
             });
         }
     ));
+
+    
     passport.use('local-login', new LocalStrategy(
         {
             usernameField: 'username',
