@@ -7,12 +7,11 @@
  */
 body {
     font-family: "Open Sans", Helvetica,Arial,sans-serif;
-    background: url('../images/MG_0959-1.jpg') no-repeat center center fixed;
+    background: url('/assets/images/MG_0959-1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-
 }
 
 label {
@@ -75,7 +74,7 @@ ul a {
 
 }
 
-input{
+input {
 	font-family: Old Standard TT;
 	font-size: 50px;
 	color: white;
