@@ -46,11 +46,7 @@ router.get('/logout',
 router.get('/profile',
   require('connect-ensure-login').ensureLoggedIn(),
   function (req, res) {
-    var user = {
-      data: req.body.User
-    };
-    res.render('profile', { layout: 'profile' }, { user });
-    console.log(user);
+    res.render('profile', { layout: 'profile' });
   });
 
 router.post('/sign-up',
@@ -58,7 +54,7 @@ router.post('/sign-up',
     successRedirect: '/profile',
     failureRedirect: '/sign-up'
   })),
-  console.log(db.Users);
+
 
 // router.put("/:id", function (req, res) {
 

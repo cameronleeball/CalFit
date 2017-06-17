@@ -119,7 +119,7 @@ module.exports = function (passport, user) {
                             lowSugar: req.body.lowSugar,
                             lowFat: req.body.lowFat,
                             fatFree: req.body.fatFree,
-                            dairyFree: req.body.dairyFree,
+                            dairyFree: req.body.dairyFree
                         };
                     User.create(data).then(function (newUser, created) {
                         if (!newUser) {

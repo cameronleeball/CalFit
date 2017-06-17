@@ -36,7 +36,7 @@
             <h1 class="header center">Unique Cuisine</h1>
             <div class="row center">
 
-                <h5 class="header col s12 light">Once you've set up your profile every recipe will be tailored to you</h5>
+                <h5 class="header col s12 light">Once you've set up your profile, every recipe will be tailored to you</h5>
                 <h5 class="header col s12 light">Search for a quick meal or plan your meals and save them to your profile</h5>
             </div>
         </div>
@@ -50,8 +50,6 @@
         <div class="row center">
             <h5 class="meal-select header col s12 light">Find a quick meal designed just for you</h5>
         </div>
-
-
     </div>
 </nav>
 
@@ -63,160 +61,218 @@
             <h1 class="header center">Quick Meal Finder</h1>
             <div class="row center">
 
-                <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
+                <form class="search-form">
+                    <input type="text" class="search-text form-control input-lg" placeholder="Search Recipes" autofocus/>
+                    <button class="btn-large waves-effect waves-light teal lighten-1" id="download-button" type="submit">Find Recipe</button>
+                </form>
+            </div>
+            </nav>
+
+
+            <div id="index-banner" class="parallax-container">
+                <div class="section no-pad-bot">
+                    <div class="container">
+                        <br><br>
+                        <h1 class="header center">Quick Meal Finder</h1>
+                        <div class="row center">
+
+                            <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
+
+                        </div>
+                        <div class="row center">
+                            <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
+                        </div>
+
+                        <br><br>
+
+                    </div>
+                </div>
+                <div class="parallax"><img src="/assets/images/nicolesy-food-1.jpg" alt="Unsplashed background img 1"></div>
+            </div>
+
+
+            <div class="container">
+                <div class="section">
+
+                    <!--   Icon Section   -->
+
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <div class="HANDLEBAR-AREA">
+                                <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
+                                <p class="center light">...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="row center">
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-            </div>
-
-            <br><br>
-
         </div>
-    </div>
-    <div class="parallax"><img src="/assets/images/nicolesy-food-1.jpg" alt="Unsplashed background img 1"></div>
-</div>
-
-
-<div class="container">
-    <div class="section">
-
-        <!--   Icon Section   -->
-
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <div class="HANDLEBAR-AREA">
-                    <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-                    <p class="center light">...</p>
+        <section class="recipe-results">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="recipes-title"></h2>
                 </div>
             </div>
-        </div>
-    </div>
+            <div class="row results" id="recipes">
+                <!-- recipe results go here -->
+            </div>
+        </section>
 
-</div>
-</div>
+        <nav class="white" role="navigation">
+            <div class="nav-wrapper container">
 
-<nav class="white" role="navigation">
-    <div class="nav-wrapper container">
 
-        <h5 class="meal-select center header col s12 light">Set a meal plan and save your favorite meals to your profile</h5>
-
-    </div>
-</nav>
-
-<div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <h1 class="header center">Breakfast</h1>
-            <div class="row center">
-                <h5 class="header col s12 light">Find a Breakfast recipe and we'll save it in your profile</h5>
-
-                <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
+                <h5 class="meal-select center header col s12 light">Set a meal plan and save your favorite meals to your profile</h5>
 
             </div>
-            <div class="row center">
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
-            </div>
-            <br><br>
+        </nav>
 
-        </div>
-    </div>
-    <div class="parallax"><img src="/assets/images/IMG_3308-1024x766.jpg" alt="Unsplashed background img 1"></div>
-</div>
+        <div id="index-banner" class="parallax-container">
+            <div class="section no-pad-bot">
+                <div class="container">
+                    <br><br>
+                    <h1 class="header center">Breakfast</h1>
+                    <div class="row center">
+                        <h5 class="header col s12 light">Find a Breakfast recipe and we'll save it in your profile</h5>
 
+                        <input class="input" type="text" placeholder="Search Recipes" name="bfast1" required>
 
-<div class="container">
-    <div class="section">
-
-        <!--   Icon Section   -->
-
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <div class="HANDLEBAR-AREA">
-                    <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-                    <p class="center light">...</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-</div>
-
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-                <h1 class="header center">Lunch</h1>
-                <div class="row center">
-                    <h5 class="header col s12 light">Find a Lunch recipe and we'll save it in your profile</h5>
-
-                    <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
-
+                    </div>
                     <div class="row center">
                         <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
                         <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="parallax"><img src="/assets/images/tumblr_m8ceav21IQ1qet4ggo1_1280.jpg" alt="Unsplashed background img 2"></div>
-</div>
 
-<div class="container">
-    <div class="section">
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <div class="HANDLEBAR-AREA">
-                    <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-                    <p class="center light">...</p>
+                <nav class="white" role="navigation">
+                    <div class="nav-wrapper container">
+
+                        <h5 class="meal-select center header col s12 light">Set a meal plan and save your favorite meals to your profile</h5>
+
+                    </div>
+                </nav>
+
+                <div id="index-banner" class="parallax-container">
+                    <div class="section no-pad-bot">
+                        <div class="container">
+                            <br><br>
+                            <h1 class="header center">Breakfast</h1>
+                            <div class="row center">
+                                <h5 class="header col s12 light">Find a Breakfast recipe and we'll save it in your profile</h5>
+
+                                <input class="input" type="text" placeholder="Enter Recipe" name="bfast1" required>
+
+                            </div>
+                            <div class="row center">
+                                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
+                                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+                            </div>
+                            <br><br>
+
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="/assets/images/IMG_3308-1024x766.jpg" alt="Unsplashed background img 1"></div>
+                </div>
+
+                <div class="container">
+                    <div class="section">
+                        <div class="container">
+                            <div class="section">
+
+                                <!--   Icon Section   -->
+
+                                <div class="col s12 m4">
+                                    <div class="icon-block">
+                                        <div class="HANDLEBAR-AREA">
+                                            <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
+                                            <p class="center light">...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="parallax-container valign-wrapper">
+                        <div class="section no-pad-bot">
+                            <div class="container">
+                                <div class="row center">
+                                    <h1 class="header center">Lunch</h1>
+                                    <div class="row center">
+                                        <h5 class="header col s12 light">Find a Lunch recipe and we'll save it in your profile</h5>
+
+
+                                        <input class="input" type="text" placeholder="Search Recipes" name="lunch1" required>
+                                        <div class="row center">
+                                            <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
+                                            <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="parallax"><img src="/assets/images/tumblr_m8ceav21IQ1qet4ggo1_1280.jpg" alt="Unsplashed background img 2"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="section">
+
+                            <!--   Icon Section   -->
+
+                            <div class="col s12 m4">
+                                <div class="icon-block">
+                                    <div class="HANDLEBAR-AREA">
+                                        <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
+                                        <p class="center light">...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="parallax-container valign-wrapper">
+                    <div class="section no-pad-bot">
+                        <div class="container">
+                            <div class="row center">
+                                <h1 class="header center">Dinner</h1>
+                                <h5 class="header col s12 light">Find a Dinner recipe and we'll save it in your profile</h5>
+                                <input class="input" type="text" placeholder="Search Recipes" name="lunch1" required>
+
+                                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
+                                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="/assets/images/Healthy-Dinner1.jpg" alt="Unsplashed background img 3"></div>
+                </div>
+
+                <div class="container">
+                    <div class="section">
+
+                        <!--   Icon Section   -->
+
+                        <div class="col s12 m4">
+                            <div class="icon-block">
+                                <div class="HANDLEBAR-AREA">
+                                    <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
+                                    <p class="center light">...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
 
 
-<div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-        <div class="container">
-            <div class="row center">
-                <h1 class="header center">Dinner</h1>
-                <h5 class="header col s12 light">Find a Dinner recipe and we'll save it in your profile</h5>
-
-                <input class="input" type="text" placeholder="Enter Recipe" name="lunch1" required>
-
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Find Recipe</a>
-                <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Save Recipe</a>
-            </div>
-        </div>
-    </div>
-    <div class="parallax"><img src="/assets/images/Healthy-Dinner1.jpg" alt="Unsplashed background img 3"></div>
-</div>
-
-<div class="container">
-    <div class="section">
-
-        <div class="col s12 m4">
-            <div class="icon-block">
-                <div class="HANDLEBAR-AREA">
-                    <h2 class="center brown-text"><i class="material-icons">Your Unique Cusine Recipe</i></h2>
-                    <p class="center light">...</p>
+            <footer class="page-footer">
+                <div class="footer-copyright">
+                    <p class="devTeam"> Unique Cuisine created by Team Chicago developers Cameron Ball, Harold Coleman, Wali Pitt, Richard Woodard</p>
                 </div>
-            </div>
         </div>
-    </div>
-</div>
-</div>
-
-
-<footer class="page-footer">
-    <div class="footer-copyright">
-        <p>Created by Team Chicago©</p>
-    </div>
-    </div>
-</footer>
+        </footer>
